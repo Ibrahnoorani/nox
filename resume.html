@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Muhammad Ibrahim Noorani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+	<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const currentPage = location.pathname.split('/').pop();
+        document.querySelectorAll('nav a').forEach(link => {
+            if(link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="process.html">Process</a></li>
+            </ul>
+        </nav>
+        <h1>My Resume</h1>
+    </header>
+    <section class="resume-container">
+        <div class="resume-pdf">
+            <embed src="Muhammad_Ibrahim_Noorani_Resume1.pdf" type="application/pdf" width="100%" height="600px" />
+            <p><a href="Muhammad_Ibrahim_Noorani_Resume1.pdf" download>Download Resume</a></p>
+        </div>
+        <div class="resume-summary">
+            <h2>Summary</h2>
+            <p><strong>Name:</strong> Ibrahim Noorani</p>
+            <p><strong>Email:</strong> muhammadnoorani007@gmail.com</p>
+            <p><strong>Phone:</strong> (647) 561-6335</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ibrahim-noorani-130343311" target="_blank">linkedin.com/in/ibrahim-noorani-130343311</a></p>
+            
+            <h2>Education</h2>
+            <p><strong>University of Toronto</strong> - Honours Bachelors of Arts (HBA) <br>
+            Double Major: Communication, Culture, Information & Technology (CCIT) and Political Science <br>
+            <em>Sept 2022 - June 2026</em></p>
+            
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Java, JavaScript, Python, HTML/CSS, API Integration, C++, Swift (iOS)</li>
+                <li><strong>Software & Tools:</strong> Adobe Creative Suite (Photoshop, Premiere Pro, Illustrator), Microsoft Suite (Excel, Word, Teams), Slack</li>
+                <li><strong>Design & Multimedia:</strong> ReactJS, Figma (UX/UI), Shopify, Wix, Canva, WordPress, Davinci Resolve, CapCut, Adobe XD</li>
+                <li><strong>IT & Productivity:</strong> POS Systems, Inventory Management, Salesforce, HubSpot, KPI Tracking Tools</li>
+                <li><strong>Other:</strong> SEO, SEM, Email Marketing, QR Code Design, Windows, Mac, Linux</li>
+            </ul>
+            
+            <h2>Experience</h2>
+            <p><strong>Nespresso | Sales Representative</strong> - Milton, ON <br>
+            <em>Feb 2023 - Jan 2024</em><br>
+            Represented the Nespresso brand, conducted product demos, managed sales reporting, and optimized customer engagement.</p>
+            
+            <p><strong>Calvin Klein | Sales Associate</strong> - Halton Hills, ON <br>
+            <em>May 2022 - Dec 2022</em><br>
+            Provided excellent customer service, exceeded sales quotas, operated POS systems, and managed inventory.</p>
+            
+            <h2>Soft Skills & Research</h2>
+            <ul>
+                <li>Research & Analytical Skills: Data collection, statistical analysis, interpretation for insights</li>
+                <li>User Testing & Feedback Analysis: Evaluating designs, collecting & analyzing feedback</li>
+                <li>Communication & Presentation: Public speaking, presenting research findings</li>
+                <li>Interpersonal & Collaborative: Leading projects, working in diverse teams</li>
+                <li>Adaptability & Quick Learning: Fast adoption of new tools and technologies</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Muhammad Ibrahim Noorani. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Process | Ibrahim Noorani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="process.html">Process</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="process-container">
+        <section class="process-hero">
+            <h1 class="cyber-heading">> Design_Process</h1>
+            <p class="subtitle">From concept to execution - my workflow documented</p>
+        </section>
+
+        <div class="pdf-terminal">
+            <div class="terminal-bar">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">process_work.pdf</span>
+            </div>
+            <embed src="Process_Work .pdf" type="application/pdf" class="process-pdf"/>
+            <a href="Process_Work .pdf" download class="download-btn">
+                <i class="fas fa-file-pdf"></i> Download Documentation
+            </a>
+        </div>
+
+        <section class="wcag-section">
+            <h2><span class="highlight">//</span> Accessibility Implementation</h2>
+            <div class="wcag-grid">
+                <div class="wcag-card">
+                    <h3><i class="fas fa-eye"></i> Perceivable</h3>
+                    <ul class="cyber-list">
+                        <li>Text alternatives for all non-text content</li>
+                        <li>4.5:1 minimum contrast ratio</li>
+                        <li>Responsive text scaling (up to 200%)</li>
+                    </ul>
+                </div>
+                
+                <div class="wcag-card">
+                    <h3><i class="fas fa-keyboard"></i> Operable</h3>
+                    <ul class="cyber-list">
+                        <li>Full keyboard navigation</li>
+                        <li>Skip navigation links</li>
+                        <li>No timing constraints</li>
+                    </ul>
+                </div>
+                
+                <div class="wcag-card">
+                    <h3><i class="fas fa-brain"></i> Understandable</h3>
+                    <ul class="cyber-list">
+                        <li>Consistent navigation</li>
+                        <li>Clear form labels</li>
+                        <li>Predictable interactions</li>
+                    </ul>
+                </div>
+                
+                <div class="wcag-card">
+                    <h3><i class="fas fa-code"></i> Robust</h3>
+                    <ul class="cyber-list">
+                        <li>Semantic HTML5</li>
+                        <li>ARIA landmarks</li>
+                        <li>Cross-browser compatible</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="testing-log">
+                <h3><i class="fas fa-vial"></i> Verification Process</h3>
+                <p>Continuous testing performed with:</p>
+                <div class="testing-badges">
+                    <span class="badge">WAVE Evaluation Tool</span>
+                    <span class="badge">NVDA Screen Reader</span>
+                    <span class="badge">Keyboard Navigation</span>
+                    <span class="badge">Mobile Responsiveness</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Ibrahim Noorani</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = location.pathname.split('/').pop();
+            document.querySelectorAll('nav a').forEach(link => {
+                if(link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

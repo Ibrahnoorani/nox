@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ibrahim Noorani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="process.html">Process</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-section">
+            <div class="contact-form-container">
+                <h2 class="cyber-heading">Contact_Me</h2>
+                <form class="cyber-form">
+                    <div class="input-group">
+                        <label for="name">> Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">> Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="message">> Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cyber-button">
+                        <span class="btn-text">Send_Message</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="map-container">
+                <div class="map-header">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>My_Location</h3>
+                </div>
+                
+                <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185090.129161999!2d-80.0243174!3d43.5184562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b62a2b75d0a4b%3A0x3b8af6fc50fbde4e!2sMilton%2C%20ON!5e0!3m2!1sen!2sca!4v1718328000000!5m2!1sen!2sca"
+  width="100%" 
+  height="400" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"
+  class="cyber-map">
+</iframe>
+                <div class="contact-info">
+                    <p><i class="fas fa-university"></i> University of Toronto</p>
+                    <p><i class="fas fa-phone"></i> (647) 561-6335</p>
+                    <p><i class="fas fa-envelope"></i> muhammadnoorani007@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Ibrahim Noorani</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = location.pathname.split('/').pop();
+            document.querySelectorAll('nav a').forEach(link => {
+                if(link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
